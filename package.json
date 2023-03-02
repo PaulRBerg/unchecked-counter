@@ -1,0 +1,47 @@
+{
+  "name": "unchecked-counter",
+  "description": "Solidity counter type that bypasses checked arithmetic",
+  "version": "1.0.0",
+  "author": {
+    "name": "Paul Razvan Berg",
+    "url": "https://github.com/PaulRBerg"
+  },
+  "bugs": {
+    "url": "https://github.com/PaulRBerg/unchecked-counter/issues"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.3",
+    "solhint": "^3.4.0"
+  },
+  "files": [
+    "/src",
+    "CHANGELOG.md"
+  ],
+  "homepage": "https://github.com/PaulRBerg/unchecked-counter#readme",
+  "keywords": [
+    "blockchain",
+    "counter",
+    "ethereum",
+    "forge",
+    "foundry",
+    "smart-contracts",
+    "solidity"
+  ],
+  "license": "MIT",
+  "packageManager": "yarn@3.4.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulRBerg/unchecked-counter"
+  },
+  "scripts": {
+    "clean": "rimraf cache out",
+    "lint": "yarn lint:sol && yarn prettier:check",
+    "lint:sol": "forge fmt --check && yarn solhint \"{src,test}/**/*.sol\"",
+    "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
+    "prettier:write": "prettier --write \"**/*.{json,md,yml}\""
+  }
+}
