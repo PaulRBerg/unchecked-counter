@@ -45,7 +45,7 @@ import { UC, uc } from "unchecked-counter/UC.sol";
 
 // Example that uses the `uc` casting function
 function iterate(uint256[] memory arr) pure {
-  for (UC i = uc(0); i < uc(100); i = i + uc(1)) {
+  for (UC i = uc(0); i < uc(arr.length); i = i + uc(1)) {
       uint256 element = arr[i.into()]; // or `i.unwrap()`
   }
 }
@@ -63,7 +63,7 @@ import { ONE, UC, ZERO } from "unchecked-counter/UC.sol";
 // Example that uses the constants `ONE` and `ZERO`
 function iterate(uint256[] memory arr) pure {
   uint256 counter;
-  for (UC i = uc(0); i < uc(100); i = i + uc(1)) {
+  for (UC i = uc(0); i < uc(arr.length); i = i + uc(1)) {
       uint256 element = arr[i.into()]; // or `i.unwrap()`
   }
 }
