@@ -63,7 +63,7 @@ import { ONE, UC, ZERO } from "unchecked-counter/UC.sol";
 // Example that uses the constants `ONE` and `ZERO`
 function iterate(uint256[] memory arr) pure {
   uint256 counter;
-  for (UC i = uc(0); i < uc(arr.length); i = i + uc(1)) {
+  for (UC i = ZERO; i < uc(arr.length); i = i + ONE) {
       uint256 element = arr[i.into()]; // or `i.unwrap()`
   }
 }
