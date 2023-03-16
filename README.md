@@ -103,4 +103,4 @@ Now you can start making changes.
 
 ## License
 
-[MIT](./LICENSE.md) © Paul Razvan Berg
+This project is licensed under MIT.
