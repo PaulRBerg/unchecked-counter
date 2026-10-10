@@ -5,6 +5,11 @@
 [license]: https://opensource.org/licenses/MIT
 [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 
+> [!WARNING]
+>
+> This repository is deprecated and archived. Since Solidity v0.8.22, the compiler omits overflow checks for simple
+> `for` loop counters incremented with `++i`, so a dedicated unchecked counter type is no longer needed.
+
 Solidity counter type that bypasses checked arithmetic, designed to be used in for loops.
 
 ## Background
